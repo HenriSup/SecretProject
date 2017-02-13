@@ -3,28 +3,31 @@
   "nodes": [
     {
       "id": "0",
-      "name": "Text",
+      "name": "Acteur",
       "children": [],
       "components": [
         {
-          "type": "TextRenderer",
+          "type": "SpriteRenderer",
           "config": {
-            "formatVersion": 2,
-            "fontAssetId": "23",
-            "text": "",
-            "alignment": "center",
-            "verticalAlignment": "center",
-            "size": null,
-            "color": null,
-            "overrideOpacity": false,
-            "opacity": null
+            "formatVersion": 1,
+            "spriteAssetId": "9",
+            "animationId": "0",
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": true,
+            "opacity": 1,
+            "materialType": "basic",
+            "shaderAssetId": null
           },
           "id": "0"
         },
         {
           "type": "Behavior",
           "config": {
-            "behaviorName": "DialogBehavior",
+            "behaviorName": "FadeBehavior",
             "propertyValues": {}
           },
           "id": "1"
@@ -33,7 +36,7 @@
       "position": {
         "x": 0,
         "y": 0,
-        "z": 7
+        "z": 25
       },
       "orientation": {
         "x": 0,

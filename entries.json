@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 25,
+  "nextEntryId": 31,
   "nodes": [
     {
       "id": "0",
@@ -94,6 +94,11 @@
           "id": "24",
           "name": "LightBehavior",
           "type": "script"
+        },
+        {
+          "id": "29",
+          "name": "FadeBehavior",
+          "type": "script"
         }
       ]
     },
@@ -110,6 +115,11 @@
         {
           "id": "21",
           "name": "TextPrefab",
+          "type": "scene"
+        },
+        {
+          "id": "28",
+          "name": "FadeIn",
           "type": "scene"
         }
       ]
@@ -128,6 +138,23 @@
           "id": "23",
           "name": "Font2",
           "type": "font"
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "name": "Sounds",
+      "type": null,
+      "children": [
+        {
+          "id": "26",
+          "name": "TalkingSound",
+          "type": "sound"
+        },
+        {
+          "id": "30",
+          "name": "LightSound",
+          "type": "sound"
         }
       ]
     }

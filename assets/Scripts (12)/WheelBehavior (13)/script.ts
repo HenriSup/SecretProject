@@ -1,5 +1,5 @@
 class WheelBehavior extends Sup.Behavior {
-  shouldMove:boolean = true
+  shouldMove:boolean = false
   awake() {
     
   }

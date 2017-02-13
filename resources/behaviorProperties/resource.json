@@ -61,7 +61,24 @@
       "scriptId": "22",
       "line": 0,
       "parentBehavior": null,
-      "properties": []
+      "properties": [
+        {
+          "name": "actualScript",
+          "type": "number"
+        },
+        {
+          "name": "scriptPlaying",
+          "type": "boolean"
+        },
+        {
+          "name": "shouldGoToNextScript",
+          "type": "boolean"
+        },
+        {
+          "name": "timer",
+          "type": "number"
+        }
+      ]
     },
     "LightBehavior": {
       "scriptId": "24",
@@ -71,6 +88,21 @@
         {
           "name": "lightShouldBeOn",
           "type": "boolean"
+        },
+        {
+          "name": "lightIsOn",
+          "type": "boolean"
+        }
+      ]
+    },
+    "FadeBehavior": {
+      "scriptId": "29",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "counter",
+          "type": "number"
         }
       ]
     }

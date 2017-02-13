@@ -144,7 +144,7 @@
           "config": {
             "formatVersion": 1,
             "spriteAssetId": "4",
-            "animationId": null,
+            "animationId": "0",
             "horizontalFlip": false,
             "verticalFlip": false,
             "castShadow": false,
@@ -245,7 +245,7 @@
             "verticalFlip": false,
             "castShadow": false,
             "receiveShadow": false,
-            "color": "ffffff",
+            "color": "8f8f8f",
             "overrideOpacity": true,
             "opacity": 1,
             "materialType": "basic",
@@ -255,7 +255,7 @@
         }
       ],
       "position": {
-        "x": 0,
+        "x": 1111.992431640625,
         "y": -300,
         "z": 2
       },
@@ -415,10 +415,10 @@
         {
           "type": "Behavior",
           "config": {
-            "behaviorName": "",
+            "behaviorName": "LightBehavior",
             "propertyValues": {}
           },
-          "id": "0"
+          "id": "1"
         }
       ],
       "position": {
