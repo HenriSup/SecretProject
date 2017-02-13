@@ -25,6 +25,43 @@
           "type": "number"
         }
       ]
+    },
+    "DialogBehavior": {
+      "scriptId": "20",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "finishedTalking",
+          "type": "boolean"
+        },
+        {
+          "name": "finaltext",
+          "type": "string"
+        },
+        {
+          "name": "actualText",
+          "type": "string"
+        },
+        {
+          "name": "frameCounter",
+          "type": "number"
+        },
+        {
+          "name": "frameBetweenLetters",
+          "type": "number"
+        },
+        {
+          "name": "canStart",
+          "type": "boolean"
+        }
+      ]
+    },
+    "ScenarioBehavior": {
+      "scriptId": "22",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
     }
   }
 }

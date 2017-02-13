@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 17,
+  "nextEntryId": 24,
   "nodes": [
     {
       "id": "0",
@@ -79,6 +79,16 @@
           "id": "16",
           "name": "WheelTrailBehavior",
           "type": "script"
+        },
+        {
+          "id": "20",
+          "name": "DialogBehavior",
+          "type": "script"
+        },
+        {
+          "id": "22",
+          "name": "ScenarioBehavior",
+          "type": "script"
         }
       ]
     },
@@ -91,6 +101,28 @@
           "id": "15",
           "name": "WheelTrail",
           "type": "scene"
+        },
+        {
+          "id": "21",
+          "name": "TextPrefab",
+          "type": "scene"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Fonts",
+      "type": null,
+      "children": [
+        {
+          "id": "19",
+          "name": "Font",
+          "type": "font"
+        },
+        {
+          "id": "23",
+          "name": "Font2",
+          "type": "font"
         }
       ]
     }
