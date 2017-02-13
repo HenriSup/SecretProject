@@ -1,3 +1,30 @@
 {
-  "behaviors": {}
+  "behaviors": {
+    "WheelBehavior": {
+      "scriptId": "13",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "shouldMove",
+          "type": "boolean"
+        }
+      ]
+    },
+    "WheelTrailBehavior": {
+      "scriptId": "16",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "timer",
+          "type": "number"
+        },
+        {
+          "name": "lifeTime",
+          "type": "number"
+        }
+      ]
+    }
+  }
 }

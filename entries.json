@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 4,
+  "nextEntryId": 17,
   "nodes": [
     {
       "id": "0",
@@ -20,6 +20,77 @@
           "id": "3",
           "name": "Pix",
           "type": "sprite"
+        },
+        {
+          "id": "4",
+          "name": "Jukebox",
+          "type": "sprite"
+        },
+        {
+          "id": "5",
+          "name": "Light",
+          "type": null,
+          "children": [
+            {
+              "id": "6",
+              "name": "FrontLight",
+              "type": "sprite"
+            },
+            {
+              "id": "7",
+              "name": "Shadow",
+              "type": "sprite"
+            },
+            {
+              "id": "8",
+              "name": "GroundLight",
+              "type": "sprite"
+            }
+          ]
+        },
+        {
+          "id": "9",
+          "name": "DebugBackground",
+          "type": "sprite"
+        },
+        {
+          "id": "10",
+          "name": "Wheel",
+          "type": "sprite"
+        },
+        {
+          "id": "11",
+          "name": "Smoke",
+          "type": "sprite"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Scripts",
+      "type": null,
+      "children": [
+        {
+          "id": "13",
+          "name": "WheelBehavior",
+          "type": "script"
+        },
+        {
+          "id": "16",
+          "name": "WheelTrailBehavior",
+          "type": "script"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Prefabs",
+      "type": null,
+      "children": [
+        {
+          "id": "15",
+          "name": "WheelTrail",
+          "type": "scene"
         }
       ]
     }

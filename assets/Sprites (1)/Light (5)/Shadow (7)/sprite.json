@@ -12,21 +12,13 @@
   "frameOrder": "rows",
   "grid": {
     "width": 1920,
-    "height": 1080
+    "height": 1100
   },
   "origin": {
     "x": 0.5,
     "y": 0.5
   },
-  "animations": [
-    {
-      "id": "0",
-      "name": "Animation",
-      "startFrameIndex": 0,
-      "endFrameIndex": 0,
-      "speed": 1
-    }
-  ],
+  "animations": [],
   "mapSlots": {
     "map": "map",
     "light": null,

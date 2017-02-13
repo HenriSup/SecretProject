@@ -6,13 +6,13 @@
   "filtering": "pixelated",
   "wrapping": "clampToEdge",
   "pixelsPerUnit": 1,
-  "framesPerSecond": 17,
+  "framesPerSecond": 16,
   "opacity": null,
   "alphaTest": 0.1,
   "frameOrder": "rows",
   "grid": {
-    "width": 100,
-    "height": 100
+    "width": 250,
+    "height": 250
   },
   "origin": {
     "x": 0.5,
@@ -28,16 +28,114 @@
     },
     {
       "id": "0",
-      "name": "Runing",
+      "name": "Idle Bored",
       "startFrameIndex": 8,
-      "endFrameIndex": 15,
+      "endFrameIndex": 22,
       "speed": 1
     },
     {
       "id": "3",
       "name": "Talking",
-      "startFrameIndex": 16,
-      "endFrameIndex": 30,
+      "startFrameIndex": 24,
+      "endFrameIndex": 38,
+      "speed": 1
+    },
+    {
+      "id": "4",
+      "name": "Runing",
+      "startFrameIndex": 40,
+      "endFrameIndex": 47,
+      "speed": 1
+    },
+    {
+      "id": "5",
+      "name": "Drawing Phone",
+      "startFrameIndex": 48,
+      "endFrameIndex": 55,
+      "speed": 1
+    },
+    {
+      "id": "6",
+      "name": "Idle Phone",
+      "startFrameIndex": 56,
+      "endFrameIndex": 63,
+      "speed": 1
+    },
+    {
+      "id": "7",
+      "name": "Listening Phone",
+      "startFrameIndex": 64,
+      "endFrameIndex": 71,
+      "speed": 1
+    },
+    {
+      "id": "8",
+      "name": "Talking Phone",
+      "startFrameIndex": 72,
+      "endFrameIndex": 86,
+      "speed": 1
+    },
+    {
+      "id": "9",
+      "name": "Holstering Phone",
+      "startFrameIndex": 88,
+      "endFrameIndex": 95,
+      "speed": 1
+    },
+    {
+      "id": "10",
+      "name": "Drawing Remote",
+      "startFrameIndex": 96,
+      "endFrameIndex": 103,
+      "speed": 1
+    },
+    {
+      "id": "11",
+      "name": "Idle Remote",
+      "startFrameIndex": 104,
+      "endFrameIndex": 111,
+      "speed": 1
+    },
+    {
+      "id": "12",
+      "name": "Idle Remote Pushed",
+      "startFrameIndex": 112,
+      "endFrameIndex": 119,
+      "speed": 1
+    },
+    {
+      "id": "13",
+      "name": "Talking Remote",
+      "startFrameIndex": 120,
+      "endFrameIndex": 134,
+      "speed": 1
+    },
+    {
+      "id": "14",
+      "name": "Holstering Remote",
+      "startFrameIndex": 136,
+      "endFrameIndex": 143,
+      "speed": 1
+    },
+    {
+      "id": "15",
+      "name": "Drawing Keyboard",
+      "startFrameIndex": 144,
+      "endFrameIndex": 151,
+      "speed": 1
+    },
+    {
+      "id": "16",
+      "name": "Idle Keyboard",
+      "startFrameIndex": 152,
+      "endFrameIndex": 159,
+      "speed": 1
+    },
+    {
+      "id": "17",
+      "name": "Holstering Keyboard",
+      "startFrameIndex": 160,
+      "endFrameIndex": 167,
       "speed": 1
     }
   ],
