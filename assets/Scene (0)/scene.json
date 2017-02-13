@@ -240,7 +240,7 @@
           "config": {
             "formatVersion": 1,
             "spriteAssetId": "3",
-            "animationId": "11",
+            "animationId": "4",
             "horizontalFlip": false,
             "verticalFlip": false,
             "castShadow": false,
@@ -411,7 +411,16 @@
           "prefab": null
         }
       ],
-      "components": [],
+      "components": [
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "",
+            "propertyValues": {}
+          },
+          "id": "0"
+        }
+      ],
       "position": {
         "x": 12,
         "y": 0,

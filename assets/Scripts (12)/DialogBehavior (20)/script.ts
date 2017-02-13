@@ -11,11 +11,12 @@ class DialogBehavior extends Sup.Behavior {
   }
 
   update() {
+    
     if (this.canStart){
       this.frameCounter++
       if (this.frameCounter>=this.frameBetweenLetters){
         this.addLetter()
-        this.frameCounter=0
+        this.frameBetweenLetters=Sup.Math.Random.integer(3,6)
       }
     }
   }
@@ -31,6 +32,11 @@ class DialogBehavior extends Sup.Behavior {
   
   addLetter(){
     this.actualText = this.actualText + this.finaltext.charAt(0)
+    if (this.finaltext.charAt(0) == "\n"){
+      this.frameCounter=-30
+    } else {
+      this.frameCounter=0
+    }
     this.finaltext=this.finaltext.slice(1)
     this.setNewText(this.actualText)
     if(this.finaltext.length<=0){

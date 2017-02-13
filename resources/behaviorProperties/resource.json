@@ -62,6 +62,17 @@
       "line": 0,
       "parentBehavior": null,
       "properties": []
+    },
+    "LightBehavior": {
+      "scriptId": "24",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "lightShouldBeOn",
+          "type": "boolean"
+        }
+      ]
     }
   }
 }
