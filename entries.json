@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 31,
+  "nextEntryId": 33,
   "nodes": [
     {
       "id": "0",
@@ -154,6 +154,16 @@
         {
           "id": "30",
           "name": "LightSound",
+          "type": "sound"
+        },
+        {
+          "id": "31",
+          "name": "RemoteSound",
+          "type": "sound"
+        },
+        {
+          "id": "32",
+          "name": "YouMan",
           "type": "sound"
         }
       ]

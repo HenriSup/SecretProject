@@ -61,7 +61,7 @@ class DialogBehavior extends Sup.Behavior {
   }
   
   playSound(){
-    this.talkingSound[this.soundCursor].setVolume(0.2);
+    this.talkingSound[this.soundCursor].setVolume(0.10);
     this.talkingSound[this.soundCursor].setPitch(Sup.Math.Random.float(-0.1,-0.2));
     this.talkingSound[this.soundCursor].play();
     this.soundCursor++;
