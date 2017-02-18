@@ -105,6 +105,69 @@
           "type": "number"
         }
       ]
+    },
+    "TextInputBehavior": {
+      "scriptId": "34",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "finishedTalking",
+          "type": "boolean"
+        },
+        {
+          "name": "finaltext",
+          "type": "string"
+        },
+        {
+          "name": "firstText",
+          "type": "string"
+        },
+        {
+          "name": "actualText",
+          "type": "string"
+        },
+        {
+          "name": "frameCounter",
+          "type": "number"
+        },
+        {
+          "name": "frameBetweenLetters",
+          "type": "number"
+        },
+        {
+          "name": "manonNumber",
+          "type": "number"
+        },
+        {
+          "name": "canStart",
+          "type": "boolean"
+        },
+        {
+          "name": "textCursor",
+          "type": "number"
+        },
+        {
+          "name": "numberOfBackspace",
+          "type": "number"
+        },
+        {
+          "name": "keyboardIsLocked",
+          "type": "boolean"
+        },
+        {
+          "name": "isWhite",
+          "type": "boolean"
+        },
+        {
+          "name": "hasCallForNextScript",
+          "type": "boolean"
+        },
+        {
+          "name": "timer",
+          "type": "number"
+        }
+      ]
     }
   }
 }

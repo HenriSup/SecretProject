@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 33,
+  "nextEntryId": 38,
   "nodes": [
     {
       "id": "0",
@@ -86,6 +86,11 @@
           "type": "script"
         },
         {
+          "id": "34",
+          "name": "TextInputBehavior",
+          "type": "script"
+        },
+        {
           "id": "22",
           "name": "ScenarioBehavior",
           "type": "script"
@@ -115,6 +120,11 @@
         {
           "id": "21",
           "name": "TextPrefab",
+          "type": "scene"
+        },
+        {
+          "id": "33",
+          "name": "TextInputPrefab",
           "type": "scene"
         },
         {
@@ -164,6 +174,21 @@
         {
           "id": "32",
           "name": "YouMan",
+          "type": "sound"
+        },
+        {
+          "id": "35",
+          "name": "BackSpaceFail",
+          "type": "sound"
+        },
+        {
+          "id": "36",
+          "name": "KeyboardSound",
+          "type": "sound"
+        },
+        {
+          "id": "37",
+          "name": "Validation",
           "type": "sound"
         }
       ]
