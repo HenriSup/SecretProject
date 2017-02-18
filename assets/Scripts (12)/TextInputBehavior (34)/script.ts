@@ -52,7 +52,7 @@ class TextInputBehavior extends Sup.Behavior {
           failSound.setPitch(Sup.Math.Random.float(0,0.5))
           failSound.play()
         }
-        if (this.numberOfBackspace>=3){
+        if (this.numberOfBackspace>=2){
           this.keyboardIsLocked=true
         }
       }
