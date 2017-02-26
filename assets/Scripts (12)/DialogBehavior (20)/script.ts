@@ -31,7 +31,7 @@ class DialogBehavior extends Sup.Behavior {
       }
     }
     
-    if(this.finishedTalking && Sup.Input.wasMouseButtonJustPressed(0)){
+    if(this.finishedTalking && (Sup.Input.wasMouseButtonJustPressed(0) || Sup.Input.wasKeyJustPressed("SPACE") || Sup.Input.wasKeyJustPressed("RETURN"))){
       Sup.getActor("Scenario").getBehavior(ScenarioBehavior).shouldGoToNextScript=true
     }
   }

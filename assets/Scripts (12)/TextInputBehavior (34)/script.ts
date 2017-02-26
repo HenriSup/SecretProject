@@ -26,6 +26,7 @@ class TextInputBehavior extends Sup.Behavior {
   }
 
   update() {
+    
     if (this.manonNumber==6){
       this.timer++
       this.shouldBlink()
@@ -51,9 +52,15 @@ class TextInputBehavior extends Sup.Behavior {
           var failSound = new Sup.Audio.SoundPlayer("Sounds/BackSpaceFail", 0.3, { loop: false })
           failSound.setPitch(Sup.Math.Random.float(0,0.5))
           failSound.play()
+          
         }
         if (this.numberOfBackspace>=2){
           this.keyboardIsLocked=true
+        } else if (this.numberOfBackspace==1){
+            if (!this.hasCallForNextScript){
+            Sup.getActor("Scenario").getBehavior(ScenarioBehavior).shouldGoToNextScript=true
+            Sup.log("MDR C DEDANS FDP")
+          }
         }
       }
     } else {

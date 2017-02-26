@@ -58,6 +58,9 @@ class ScenarioBehavior extends Sup.Behavior {
       case 14 :
         this.script14();
         break;
+      case 54 :
+        this.script15();
+        break;
     }
   }
   
@@ -245,14 +248,33 @@ class ScenarioBehavior extends Sup.Behavior {
     if(this.shouldGoToNextScript){
       this.nextScript()
     }
+    Sup.log(this.shouldGoToNextScript)
   }
   
   script11(){
     if (!this.scriptPlaying){
       var text = Sup.appendScene("Prefabs/TextPrefab")[0]
+      text.getBehavior(DialogBehavior).setText("JE SUIS PRESQUE CERTAIN QUE C'EST PAS UN NOM ÇA :P")
+      this.textPrefabs.push(text)
+      this.scriptPlaying=true
+    }
+    if(this.shouldGoToNextScript){
+      this.textPrefabs[0].destroy()
+      this.textPrefabs.shift()
+      this.nextScript()
+    }
+  }
+  
+  script12(){
+    if (!this.scriptPlaying){
+      if (this.timer>60){
+      var text = Sup.appendScene("Prefabs/TextPrefab")[0]
+      
       text.getBehavior(DialogBehavior).setText("BIZARRE... ON DIRAIT QUE TON CLAVIER BUG")
       this.textPrefabs.push(text)
       this.scriptPlaying=true
+      }
+      this.timer++
     }
     if(this.shouldGoToNextScript){
       
@@ -261,7 +283,7 @@ class ScenarioBehavior extends Sup.Behavior {
       this.nextScript()
     }
   } 
-  script12(){
+  script13(){
     if (!this.scriptPlaying){
       var text = Sup.appendScene("Prefabs/TextPrefab")[0]
       text.getBehavior(DialogBehavior).setText("LAISSE-MOI TE DONNER UN COUP DE MAIN :)")
@@ -275,7 +297,7 @@ class ScenarioBehavior extends Sup.Behavior {
       this.nextScript()
     }
   } 
-  script13(){
+  script14(){
     var pix = Sup.getActor("Pix")
     if (!this.scriptPlaying){
       pix.spriteRenderer.setAnimation("Drawing Keyboard",false)
@@ -342,7 +364,7 @@ class ScenarioBehavior extends Sup.Behavior {
 
   }
   
-  script14(){
+  script15(){
      if (!this.scriptPlaying){
       var text = Sup.appendScene("Prefabs/TextPrefab")[0]
       text.getBehavior(DialogBehavior).setText("VOILA C'EST MIEUX NON ?")
@@ -363,7 +385,8 @@ class ScenarioBehavior extends Sup.Behavior {
     this.scriptPlaying=false
     this.shouldGoToNextScript=false
     this.timer=0
-    //Sup.log("Nouveau script :"+this.actualScript)
+    Sup.log("Nouveau script :"+this.actualScript)
+    
     //Sup.log(this.textPrefabs)
   }
 }
