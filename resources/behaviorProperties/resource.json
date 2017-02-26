@@ -168,6 +168,29 @@
           "type": "number"
         }
       ]
+    },
+    "ChoiceButtonBehavior": {
+      "scriptId": "40",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "isClickable",
+          "type": "boolean"
+        },
+        {
+          "name": "shouldFlicker",
+          "type": "boolean"
+        },
+        {
+          "name": "timer",
+          "type": "number"
+        },
+        {
+          "name": "flickerFrame",
+          "type": "number"
+        }
+      ]
     }
   }
 }

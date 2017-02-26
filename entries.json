@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 38,
+  "nextEntryId": 41,
   "nodes": [
     {
       "id": "0",
@@ -62,6 +62,11 @@
           "id": "11",
           "name": "Smoke",
           "type": "sprite"
+        },
+        {
+          "id": "38",
+          "name": "No",
+          "type": "sprite"
         }
       ]
     },
@@ -104,6 +109,11 @@
           "id": "29",
           "name": "FadeBehavior",
           "type": "script"
+        },
+        {
+          "id": "40",
+          "name": "ChoiceButtonBehavior",
+          "type": "script"
         }
       ]
     },
@@ -130,6 +140,11 @@
         {
           "id": "28",
           "name": "FadeIn",
+          "type": "scene"
+        },
+        {
+          "id": "39",
+          "name": "FakeNo",
           "type": "scene"
         }
       ]

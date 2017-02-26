@@ -58,8 +58,14 @@ class ScenarioBehavior extends Sup.Behavior {
       case 14 :
         this.script14();
         break;
-      case 54 :
+      case 15 :
         this.script15();
+        break;
+      case 16 :
+        this.script16();
+        break;
+      case 17 :
+        this.script17();
         break;
     }
   }
@@ -207,7 +213,6 @@ class ScenarioBehavior extends Sup.Behavior {
            
       }
     }
-    
   }
   script8(){
     if (!this.scriptPlaying){
@@ -277,7 +282,6 @@ class ScenarioBehavior extends Sup.Behavior {
       this.timer++
     }
     if(this.shouldGoToNextScript){
-      
       this.textPrefabs[0].destroy()
       this.textPrefabs.shift()
       this.nextScript()
@@ -291,7 +295,6 @@ class ScenarioBehavior extends Sup.Behavior {
       this.scriptPlaying=true
     }
     if(this.shouldGoToNextScript){
-      
       this.textPrefabs[0].destroy()
       this.textPrefabs.shift()
       this.nextScript()
@@ -309,7 +312,6 @@ class ScenarioBehavior extends Sup.Behavior {
     if (pix.spriteRenderer.getAnimation()=="Idle Keyboard"){
       this.timer++
       var manonNumber= this.textInputPrefabs[0].getBehavior(TextInputBehavior).manonNumber;
-      Sup.log(manonNumber)
       if (this.timer>=30 && manonNumber==0){
         var keyboardSound = new Sup.Audio.SoundPlayer("Sounds/KeyboardSound", 0.3, { loop: false })
         keyboardSound.setPitch(Sup.Math.Random.float(0,0.5))
@@ -346,7 +348,6 @@ class ScenarioBehavior extends Sup.Behavior {
         this.textInputPrefabs[0].getBehavior(TextInputBehavior).manonNumber++
        
       }
-      
       if (this.timer>=230 && manonNumber==5){
         var validationSound = new Sup.Audio.SoundPlayer("Sounds/Validation", 0.3, { loop: false })
         validationSound.setPitch(Sup.Math.Random.float(0,0.5))
@@ -379,13 +380,65 @@ class ScenarioBehavior extends Sup.Behavior {
       this.nextScript()
     }
   }
+  script16(){
+     if (!this.scriptPlaying){
+      var text = Sup.appendScene("Prefabs/TextPrefab")[0]
+      text.getBehavior(DialogBehavior).setText("OK PREMIERE QUESTION")
+      this.textPrefabs.push(text)
+      this.scriptPlaying=true
+    }
+    if(this.shouldGoToNextScript){
+      this.textPrefabs[0].destroy()
+      this.textPrefabs.shift()
+      this.nextScript()
+    }
+  }
+  
+  script17(){
+    var pix = Sup.getActor("Pix")
+    if (!this.scriptPlaying){
+      pix.spriteRenderer.setAnimation("Drawing Remote",false)
+      this.scriptPlaying=true
+    }
+    if (pix.spriteRenderer.getAnimation()=="Drawing Remote" && pix.spriteRenderer.getAnimationFrameIndex() == pix.spriteRenderer.getAnimationFrameCount()-1){
+      pix.spriteRenderer.setAnimation("Idle Remote",true)
+    }
+    if (pix.spriteRenderer.getAnimation()=="Idle Remote"){
+      this.timer++
+      var frameTime= pix.spriteRenderer.getAnimationFrameTime()
+      if (this.timer>=30){
+        pix.spriteRenderer.setAnimation("Idle Remote Pushed",true)
+        pix.spriteRenderer.setAnimationFrameTime(frameTime)
+        var remoteSound = new Sup.Audio.SoundPlayer("Sounds/RemoteSound", 0.1, { loop: false })
+        remoteSound.play()
+      }
+    }
+    
+    this.timer++
+      if (this.timer>=60){
+        if (pix.spriteRenderer.getAnimation()=="Idle Remote Pushed"){
+          pix.spriteRenderer.setAnimation("Holstering Remote",false)
+        }
+        if (pix.spriteRenderer.getAnimation()=="Holstering Remote" && pix.spriteRenderer.getAnimationFrameIndex() == pix.spriteRenderer.getAnimationFrameCount()-1){
+          pix.spriteRenderer.setAnimation("Idle",true)
+        }
+        if (this.timer>=150){
+          Sup.getActor("Pix").spriteRenderer.setAnimation("Idle Bored",true)
+          this.nextScript()
+        }
+      }
+  }
+  
+  script18(){
+
+  }
   
   public nextScript(){
     this.actualScript++
     this.scriptPlaying=false
     this.shouldGoToNextScript=false
     this.timer=0
-    Sup.log("Nouveau script :"+this.actualScript)
+    //Sup.log("Nouveau script :"+this.actualScript)
     
     //Sup.log(this.textPrefabs)
   }
