@@ -179,7 +179,7 @@
           "type": "boolean"
         },
         {
-          "name": "shouldFlicker",
+          "name": "isOn",
           "type": "boolean"
         },
         {
